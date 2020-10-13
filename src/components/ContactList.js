@@ -31,7 +31,8 @@ const users = [
 ];
 
 const ContactList = () => {
-    return (users.map((el) => <Contact  {...el} key = {el.avatar}/>));
+    return (users.map((el, i) => <Contact  {...el} key = {i}/>));
 };
+
 
 export default ContactList;
